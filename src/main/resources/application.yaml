@@ -1,0 +1,14 @@
+server:
+  port: 1680
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/db_e_learning
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 11020315
+  application:
+    name: e-learning-api
