@@ -1,6 +1,6 @@
 package co.istad.ratanak.elearningapi.features.course;
 
-import co.istad.ratanak.elearningapi.features.category.Category;
+import co.istad.ratanak.elearningapi.features.category.domain.Category;
 import co.istad.ratanak.elearningapi.features.enrollment.Enrollment;
 import co.istad.ratanak.elearningapi.features.instructor.InstructorProfile;
 import co.istad.ratanak.elearningapi.features.video.Video;

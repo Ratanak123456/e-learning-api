@@ -1,4 +1,4 @@
-package co.istad.ratanak.elearningapi.features.category;
+package co.istad.ratanak.elearningapi.features.category.service;
 
 import co.istad.ratanak.elearningapi.features.category.dto.CategoryRequest;
 import co.istad.ratanak.elearningapi.features.category.dto.CategoryResponse;

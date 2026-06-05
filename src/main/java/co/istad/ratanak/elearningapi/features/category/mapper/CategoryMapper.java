@@ -1,6 +1,6 @@
 package co.istad.ratanak.elearningapi.features.category.mapper;
 
-import co.istad.ratanak.elearningapi.features.category.Category;
+import co.istad.ratanak.elearningapi.features.category.domain.Category;
 import co.istad.ratanak.elearningapi.features.category.dto.CategoryRequest;
 import co.istad.ratanak.elearningapi.features.category.dto.CategoryResponse;
 import org.mapstruct.BeanMapping;

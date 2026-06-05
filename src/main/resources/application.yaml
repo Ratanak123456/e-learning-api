@@ -1,9 +1,15 @@
 server:
-  port: 1680
+  port: 9090
 spring:
   jpa:
     hibernate:
       ddl-auto: update
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/devops-class
+
 
   datasource:
     url: jdbc:postgresql://localhost:5432/db_e_learning

@@ -1,4 +1,4 @@
-package co.istad.ratanak.elearningapi.features.category;
+package co.istad.ratanak.elearningapi.features.category.domain;
 
 import co.istad.ratanak.elearningapi.features.course.Course;
 import jakarta.persistence.*;

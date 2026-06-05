@@ -1,5 +1,7 @@
-package co.istad.ratanak.elearningapi.features.category;
+package co.istad.ratanak.elearningapi.features.category.service;
 
+import co.istad.ratanak.elearningapi.features.category.repository.CategoryRepository;
+import co.istad.ratanak.elearningapi.features.category.domain.Category;
 import co.istad.ratanak.elearningapi.features.category.dto.CategoryRequest;
 import co.istad.ratanak.elearningapi.features.category.dto.CategoryResponse;
 import co.istad.ratanak.elearningapi.features.category.mapper.CategoryMapper;
@@ -8,7 +10,9 @@ import co.istad.ratanak.elearningapi.global.exception.ResourceNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
+import org.springframework.web.server.ResponseStatusException;
 
 @Service
 @RequiredArgsConstructor
