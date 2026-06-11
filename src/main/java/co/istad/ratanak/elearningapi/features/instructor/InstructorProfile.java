@@ -1,5 +1,6 @@
 package co.istad.ratanak.elearningapi.features.instructor;
 
+import co.istad.ratanak.elearningapi.config.audition.BasedEntity;
 import co.istad.ratanak.elearningapi.features.course.Course;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -16,7 +17,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "instructor_profiles")
-public class InstructorProfile {
+public class InstructorProfile extends BasedEntity {
 
     public InstructorProfile(String userId) {
         this.userId = userId;

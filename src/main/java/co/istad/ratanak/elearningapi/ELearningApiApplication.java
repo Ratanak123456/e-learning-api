@@ -2,15 +2,16 @@ package co.istad.ratanak.elearningapi;
 
 import co.istad.ratanak.elearningapi.features.course.Course;
 import co.istad.ratanak.elearningapi.features.course.CourseRepository;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import java.util.List;
 
-//@RequiredArgsConstructor
+@EnableJpaAuditing
 @SpringBootApplication
 public class ELearningApiApplication implements CommandLineRunner{
 

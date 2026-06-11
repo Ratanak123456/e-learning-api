@@ -14,6 +14,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 import java.time.LocalDateTime;
 
+
 @Service
 @Slf4j
 @RequiredArgsConstructor
@@ -47,8 +48,6 @@ public class CourseServiceImplement implements CourseService{
         course.setStarRating(0F);
         course.setIsDeleted(false);
         course.setIsPublished(false);
-        course.setCreatedAt(LocalDateTime.now());
-        course.setUpdatedAt(LocalDateTime.now());
         course.setInstructorProfile(new InstructorProfile(jwt.getSubject()));
 
         course = courseRepository.save(course);

@@ -1,5 +1,6 @@
 package co.istad.ratanak.elearningapi.features.enrollment;
 
+import co.istad.ratanak.elearningapi.config.audition.BasedEntity;
 import co.istad.ratanak.elearningapi.features.course.Course;
 import co.istad.ratanak.elearningapi.features.student.StudentProfile;
 import jakarta.persistence.*;
@@ -14,7 +15,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Entity
 @Table(name = "enrollments")
-public class Enrollment {
+public class Enrollment extends BasedEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;

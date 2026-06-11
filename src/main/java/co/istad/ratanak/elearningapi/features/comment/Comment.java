@@ -27,5 +27,4 @@ public class Comment {
     @ManyToOne
     private Video video;
 
-    private LocalDateTime createdAt;
 }

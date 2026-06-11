@@ -1,5 +1,6 @@
 package co.istad.ratanak.elearningapi.features.course;
 
+import co.istad.ratanak.elearningapi.config.audition.BasedEntity;
 import co.istad.ratanak.elearningapi.features.category.domain.Category;
 import co.istad.ratanak.elearningapi.features.enrollment.Enrollment;
 import co.istad.ratanak.elearningapi.features.instructor.InstructorProfile;
@@ -18,12 +19,12 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @Table(name = "courses")
-public class Course {
+public class Course extends BasedEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String slug;
-    private String keyword;
+    private String keyword; // use for SEO
     private String title;
     private String description;
     private String thumbnail;
@@ -33,8 +34,6 @@ public class Course {
     private String level;
     private BigDecimal price;
     private Float discountPercent;
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
 
     @ManyToOne
     private Category category;
