@@ -28,14 +28,11 @@ public record CreateCourseRequest(
         @Positive
         @NotNull
         BigDecimal price,
-        @Min(0)
         @NotNull
+        @Min(0)
         Float discountPercent,
         @Positive
         @NotNull
-        Integer categoryId,
-        @NotBlank
-        @Size(max = 255)
-        String instructorId
+        Integer categoryId
 ) {
 }
