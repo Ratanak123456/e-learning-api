@@ -9,5 +9,9 @@ public interface CourseRepository extends JpaRepository<Course, Integer> {
 
     boolean existsBySlug(String slug);
 
+    List<Course> allCourses();
+
+    Course byId(Integer id);
+
 }
 

@@ -23,7 +23,7 @@ public class Course {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String slug;
-    private String keyword; // use for SEO
+    private String keyword;
     private String title;
     private String description;
     private String thumbnail;
